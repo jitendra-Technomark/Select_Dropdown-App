@@ -18,9 +18,9 @@ export default function Home() {
 
   return (
     <div>
-    <Select options={options} label="Select an option" onSelect={(value) => setSelectedValue(value)} />
-    <MultiSelectSearch options={options} type="checkbox" label="Select an option" onSelect={(value) => setSelectedValue(value)} />
-    <MultiSelectChip options={options} type="checkbox" label="Select an option" onSelect={(value) => setSelectedValue(value)} />
+    <Select options={options} id="basic" onSelect={(value: any) => setSelectedValue(value)} />
+    <MultiSelectSearch id="multiselect" options={options} type="checkbox" label="Select an option" onSelect={(value: any) => setSelectedValue(value)} />
+    <MultiSelectChip options={options} type="checkbox" label="Select an option" onSelect={(value: any) => setSelectedValue(value)} />
     </div>
   )
 }
